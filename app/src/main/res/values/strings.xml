@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Java Love</string>
+    <string name="java_love_logo">Java love logo</string>
+    <string-array name="categories">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
 </resources>
