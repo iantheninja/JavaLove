@@ -8,13 +8,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:fullBackupContent="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".TopLevel">
+        <activity android:name=".TopLevelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ianmunene.com"
+                    android:scheme="programming constraint layouts" />
             </intent-filter>
+        </activity>
+        <activity android:name=".DrinkCategoryActivity">
+
         </activity>
     </application>
 
