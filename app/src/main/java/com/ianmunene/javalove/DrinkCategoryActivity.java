@@ -25,11 +25,9 @@ public class DrinkCategoryActivity extends Activity {
             public void onItemClick(AdapterView<?> listView,
                                     View itemView,
                                     int position, long id) {
-                if (position == 0) {
-                    Intent intent = new Intent(getBaseContext(), DrinkActivity.class);
-                    intent.putExtra(DrinkActivity.EXTRA_DRINKID, (int) id);
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(getBaseContext(), DrinkActivity.class);
+                intent.putExtra(DrinkActivity.EXTRA_DRINKID, (int) id);
+                startActivity(intent);
             }
         };
         listDrinks.setOnItemClickListener(itemClickListener);
